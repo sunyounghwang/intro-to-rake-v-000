@@ -9,3 +9,11 @@ namespace :greeting do
     puts "hola de Rake!"
   end
 end
+
+desc 'loads environment'
+task :environment do
+  require_relative './config/environment.rb'
+end
+
+namespace :db
+  desc ''
