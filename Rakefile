@@ -15,7 +15,7 @@ task :environment do
   require_relative './config/environment.rb'
 end
 
-namespace :db
+namespace :db do
   desc 'creates students table'
   task :migrate => :environment do
     Student.create_table
