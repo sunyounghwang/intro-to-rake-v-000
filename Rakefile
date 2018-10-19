@@ -16,4 +16,7 @@ task :environment do
 end
 
 namespace :db
-  desc ''
+  desc 'creates table'
+  task :migrate => :environment do
+
+  end
